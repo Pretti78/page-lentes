@@ -1,0 +1,110 @@
+* {
+	box-sizing: border-box;
+}
+
+html {
+	/* 1rem = 10px */
+	font-size: 62.5%;
+}
+
+body {
+	margin: 0;
+	font-size: 1.6rem;
+	font-family: 'Anek Telugu', sans-serif;
+}
+
+img {
+	display: block;
+	width: 100%;
+}
+
+.main-header {
+	padding: 0 2rem;
+}
+
+.main-header-tittle {
+	font-family: 'Inspiration', cursive;
+	text-align: center;
+	font-size: 5rem;
+	margin: 10px 0px;
+}
+
+.main-nav-header {
+	display: none;
+}
+
+.main-header-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.icon-menu {
+	font-size: 3rem;
+	border: 1px solid black;
+	display: block;
+	padding: 10px 20px;
+	cursor: pointer;
+}
+
+.main-header-btn {
+	display: block;
+	padding: 10px 20px;
+	color: black;
+	border: 1px solid black;
+	text-decoration: none;
+}
+
+.main-header-input {
+	display: block;
+	padding: 10px;
+}
+
+/*scroll-behaivor: smooth*/
+
+/*________________________SLIDER___________________________*/
+
+.container-slider {
+	margin: 5rem 0;
+	position: relative;
+	overflow: hidden;
+}
+
+.slider {
+	display: flex;
+	width: 400%;
+	height: 300px;
+	margin-left: -100%;
+}
+
+.slider-section {
+	width: 100%;
+}
+
+.slider-img {
+	height: 100%;
+	object-fit: cover;
+}
+
+.slider-btn {
+	position: absolute;
+	width: 4rem;
+	height: 4rem;
+	background: rgba(255, 255, 255, 0.5);
+	top: 50%;
+	transform: translateY(-50%);
+	font-size: 30px;
+	font-weight: bold;
+	font-family: monospace;
+	text-align: center;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.slider-btn-rigth {
+	right: 1rem;
+}
+
+.slider-btn-left {
+	left: 1rem;
+}

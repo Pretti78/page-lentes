@@ -6,12 +6,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="styles/style.css" />
 		<link rel="stylesheet" href="./styles/normalize.css" />
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Anek+Telugu&family=Inspiration&display=swap"
-			rel="stylesheet"
-		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Anek+Telugu&family=Inspiration&display=swap" rel="stylesheet">
 		<script
 			src="https://kit.fontawesome.com/3c56e3196a.js"
 			crossorigin="anonymous"
@@ -24,7 +21,6 @@
 				<div class="main-header-container-flex">
 					<div class="main-header-container">
 						<h1 class="main-header-tittle">Optica Pretti</h1>
-						<button class="darkMode">Dark Mode</button>
 						<span class="icon-menu fa-solid fa-bars" id="btn-menu"></span>
 					</div>
 					<div class="main-header-container">
@@ -49,43 +45,54 @@
 						</nav>
 					</div>
 					<div class="main-header-container">
-						<i class="fa-solid fa-user"></i>
-						<a href="" class="main-header-btn"
-							><i class="fa-solid fa-cart-shopping"></i>
+						<a href="#" class="main-header-link"><i class="fa-solid fa-user"></i></a>
+						<a href="" class="main-header-btn"><i class="fa-solid fa-cart-shopping"></i>
 						</a>
-						<input
-							type="search"
-							class="main-header-input"
-							placeholder="buscar productos"
-						/><i class="fa-solid fa-magnifying-glass"></i>
+						<button class="darkMode">Dark Mode</button>
 					</div>
 				</div>
 			</div>
 		</header>
+		<div class="cart-total-main">
+			<div class="cart-container">
+				<div class="close-cart">
+					<h4 class="tittle-cart">Carrito de compras</h4>
+					<i class="fa-regular fa-circle-xmark button-cart-close"></i>
+				</div>
+				<div class="cart-total-buy ">
+					<h4 class="cart-empy"><u>!El carrito esta vacio¡</u></h4>
+				</div>
+			</div>
+		</div>
 		<section class="container-slider">
 			<div class="slider" id="slider">
 				<div class="slider-section">
 					<img src="./img/main-banners/anteojo.png" alt="" class="slider-img" />
-					<h2 class="slider-tittle">Cuida tus ojos</h2>
-					<p class="slider-txt"></p>
-					<a href="" class="slider-btn-img"></a>
+					<div class="slider-content">
+						<h2 class="slider-tittle">Cuida tus ojos</h2>
+						<p class="slider-txt">cristales de exelente calidad</p>
+						<a href="" class="slider-link">Ver</a>
+					</div>
 				</div>
 				<div class="slider-section">
 					<img
-						src="./img/main-banners/banner-amigos.png"
-						alt=""
-						class="slider-img"
+					src="./img/main-banners/banner-amigos.png"
+					alt=""
+					class="slider-img"
 					/>
-					<h2 class="slider-tittle">Anteojos de sol</h2>
-					<p class="slider-txt"></p>
-					<a href="" class="slider-btn-img"></a>
+					<div  class="slider-content">
+						<h2 class="slider-tittle">Anteojos de sol</h2>
+						<p class="slider-txt">proteccion UV. con el mejor estilo</p>
+						<a href="" class="slider-link">Ver</a>
+					</div>
 				</div>
 				<div class="slider-section">
 					<img src="./img/main-banners/banner.png" alt="" class="slider-img" />
-					<h2 class="slider-tittle">Anteojos recetados</h2>
-					<p class="slider-txt">tenemos como principal objetivo cuidar tu salud visual y respetar fielmente la indicación del tu Oftalmólogo. 
-						Te ofrecemos una amplia gama de lentes y cristales de última generación, brindándote una experiencia visual confortable.</p>
-					<a href="" class="slider-btn-img"></a>
+					<div  class="slider-content">
+						<h2 class="slider-tittle">Anteojos recetados</h2>
+						<p class="slider-txt">tenemos como principal objetivo cuidar tu salud visual y respetar fielmente la indicación del tu Oftalmólogo.</p>
+						<a href="" class="slider-link">Ver</a>
+					</div>
 				</div>
 				<div class="slider-section">
 					<img
@@ -93,9 +100,11 @@
 						alt=""
 						class="slider-img"
 					/>
-					<h2 class="slider-tittle"></h2>
-					<p class="slider-txt"></p>
-					<a href="" class="slider-btn-img"></a>
+					<div  class="slider-content">
+						<h2 class="slider-tittle">hasta 50% de descuento</h2>
+						<p class="slider-txt">no te pierdas de todas las ofertas increibles que tenemos para vos</p>
+						<a href="" class="slider-link">Ver</a>
+					</div>
 				</div>
 			</div>
 			<div class="slider-btn slider-btn-rigth" id="btn-rigth">></div>
@@ -103,20 +112,175 @@
 		</section>
 		<main class="main">
 				<h2 class="main-tittle">destacados</h2>
-				<section class="prodect">
-					<div class="products">Anteojos</div>
-					<div class="products">Lentes</div>
-					<div class="products">Lentes De Sol</div>
+				<section class="products-section">
+					<div class="container-products">
+						<h3 class="products-tittle-container">Anteojos</h3>
+						<div class="products">
+							<div class="product-card">
+								<img src="./img-lentes/anteojos/anteojos-1.png" alt="" class="product-img">
+								<div class="product-description">
+									<h3 class="product-tittle">Lentes RayBan m4q</h3>
+									<span class="product-price">$46</span>
+									<a href="#">
+										<i class="product-icon-cart fa-solid fa-cart-arrow-down"></i>
+									</a>
+								</div>
+							</div>
+							<div class="product-card">
+								<img src="./img-lentes/anteojos/anteojos-2.jpg" alt="" class="product-img">
+								<div class="product-description">
+									<h3 class="product-tittle">Lentes RayBan m5k</h3>
+									<span class="product-price">$57</span>
+									<a href="#">
+										<i class="product-icon-cart fa-solid fa-cart-arrow-down"></i>
+									</a>
+								</div>
+							</div>
+							<div class="product-card">
+								<img src="./img-lentes/anteojos/anteojos-3.png" alt="" class="product-img">
+								<h3 class="product-tittle">Lentes RayBan s7k</h3>
+								<span class="product-price">$80</span>
+								<a href="#">
+									<i class="product-icon-cart fa-solid fa-cart-arrow-down"></i>
+								</a>
+							</div>
+							<div class="product-card">
+								<img src="./img-lentes/anteojos/anteojos-4.jpg" alt="" class="product-img">
+								<h3 class="product-tittle">Lentes RayBan 9zt</h3>
+								<span class="product-price">$30</span>
+								<a href="#">
+									<i class="product-icon-cart fa-solid fa-cart-arrow-down"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="container-products">
+						<h3 class="products-tittle-container">Lentes</h3>
+						<div class="products">
+							<div class="product-card">
+								<img src="./img-lentes/lentes/lentes-1.jpg" alt="" class="product-img">
+								<div class="product-description">
+									<h3 class="product-tittle">Lentes DG 2247g</h3>
+									<span class="product-price">$265</span>
+									<a href="#">
+										<i class="product-icon-cart fa-solid fa-cart-arrow-down"></i>
+									</a>
+								</div>
+							</div>
+							<div class="product-card">
+								<img src="./img-lentes/lentes/lentes-2.jpg" alt="" class="product-img">
+								<div class="product-description">
+									<h3 class="product-tittle">Lentes DG 2289g</h3>
+									<span class="product-price">$230</span>
+									<a href="#">
+										<i class="product-icon-cart fa-solid fa-cart-arrow-down"></i>
+									</a>
+								</div>
+							</div>
+							<div class="product-card">
+								<img src="./img-lentes/lentes/lentes-3.jpg" alt="" class="product-img">
+								<div class="product-description">
+									<h3 class="product-tittle">Lentes DG 2141g</h3>
+									<span class="product-price">$280</span>
+									<a href="#">
+										<i class="product-icon-cart fa-solid fa-cart-arrow-down"></i>
+									</a>
+								</div>
+							</div>
+							<div class="product-card">
+								<img src="./img-lentes/lentes/lentes-4.jpg" alt="" class="product-img">
+								<div class="product-description">
+									<h3 class="product-tittle">Lentes DG 2323g</h3>
+									<span class="product-price">$420</span>
+									<a href="#">
+										<i class="product-icon-cart fa-solid fa-cart-arrow-down"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="container-products">
+						<h3 class="products-tittle-container">Lentes De Sol</h3>
+						<div class="products">
+							<div class="product-card">
+								<img src="./img-lentes/lentes-sol/lentes-sol-1.png" alt="" class="product-img">
+								<div class="product-description">
+									<h3 class="product-tittle">Reef mk3</h3>
+									<span class="product-price">$120</span>
+									<a href="#">
+										<i class="product-icon-cart fa-solid fa-cart-arrow-down"></i>					
+									</a>
+								</div>
+							</div>
+							<div class="product-card">
+								<img src="./img-lentes/lentes-sol/lentes-sol-2.jpg" alt="" class="product-img">
+								<div class="product-description">
+									<h3 class="product-tittle">Reef mk90</h3>
+									<span class="product-price">$100</span>
+									<a href="#">
+										<i class="product-icon-cart fa-solid fa-cart-arrow-down"></i>					
+									</a>
+								</div>
+							</div>
+							<div class="product-card">
+								<img src="./img-lentes/lentes-sol/lentes-sol-3.png" alt="" class="product-img">
+								<div class="product-description">
+									<h3 class="product-tittle">Reef mk7</h3>
+									<span class="product-price">$125</span>
+									<a href="#">
+										<i class="product-icon-cart fa-solid fa-cart-arrow-down"></i>					
+									</a>
+								</div>
+							</div>
+							<div class="product-card">
+								<img src="./img-lentes/lentes-sol/lentes-sol-4.jpg" alt="" class="product-img">
+								<div class="product-description">
+									<h3 class="product-tittle">Reef mk41</h3>
+									<span class="product-price">$140</span>
+									<a href="#">
+										<i class="product-icon-cart fa-solid fa-cart-arrow-down"></i>					
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
 				</section>
 			</section>
 		</main>
-		<section>
-			<a href="https://www.facebook.com/profile.php?id=100077710988216"
-				>facebook</a
-			>
-		</section>
 		<footer>
-			<a href="https://wa.me/2215685497" class="contact-link">2215685497</a>
+			<div class="main-footer">
+				<div class="footer-section">
+					<h3 class="footer-tittle">Sobre Nosotros</h3>
+					<p class="footer-txt">somos una empresa emergente y queremos brindar el mejor servicio posible para mejorar la calidad de vida de nuestros clientes</p>
+				</div>
+				<div class="footer-section">
+					<h3 class="footer-tittle">Contacto</h3>
+					<ul>
+						<li class="li-footer">
+							<a href="https://wa.me/2215685497" class="a-footer">2215685497</a>
+					</li>
+					
+					<li class="li-footer">
+						<a href="https://mail.google.com/mail/u/0/#inbox?compose=new" class="a-footer">OpticaPretti@gmail.com</a>
+					</li>
+					<li class="li-footer">
+					<a href="https://www.facebook.com/profile.php?id=100077710988216" class="a-footer">facebook</a>
+					</li>
+				</ul>
+				</div>
+				<div class="footer-section">
+				<h3 class="footer-tittle">Informacion</h3>
+				<ul>
+					<li class="li-footer">
+						<a href="#" class="a-footer">Formas de Envio</a>
+					</li>
+					<li class="li-footer">
+						<a href="./politica-de-cambio/politicas.html" class="a-footer">Politica de Cambios y Devoluciones</a>
+					</li>
+				</ul>
+				</div>
+			</div>
+			<p class="copyRigth">Copyright Optica Pretti Store © - 2022. Todos los derechos reservados.</p>
 		</footer>
 	</body>
 	<script src="./scripts/script.js"></script>

@@ -1,3 +1,7 @@
+/*MENU-NAV*/
+const btnMenu = document.querySelector('#btn-menu');
+const mainNav = document.querySelector('#main-nav');
+
 /*THEME*/
 const btn = document.querySelector('.darkMode');
 /*SLIDER*/
@@ -53,10 +57,10 @@ if (localStorage.getItem('theme') === '') {
 const themeUsed = localStorage.getItem('theme');
 
 if (themeUsed === 'dark') {
-	document.body.style.background = '#2c2c2c';
+	document.body.style.background = '#2a2a2a';
 	btn.textContent = 'Modo Claro';
 } else {
-	document.body.style.background = '#e3e3e3';
+	document.body.style.background = '#d6d5c9';
 	btn.textContent = 'Modo Oscuro';
 }
 
@@ -65,13 +69,17 @@ btn.addEventListener('click', () => {
 
 	if (themeUsed === 'dark') {
 		localStorage.setItem('theme', 'light');
-		document.body.style.background = '#e3e3e3';
+		document.body.style.background = '#d6d5c9';
 		btn.textContent = 'Modo Oscuro';
 	} else {
 		localStorage.setItem('theme', 'dark');
-		document.body.style.background = '#2c2c2c';
+		document.body.style.background = '#2a2a2a';
 		btn.textContent = 'Modo Claro';
 	}
 });
 
-/*_______________________SLIDER___________________________*/
+/*_______________________MENU-NAV__________________________*/
+
+btnMenu.addEventListener('click', () => {
+	mainNav.classList.toggle('mostrar');
+});
